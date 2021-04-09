@@ -14,7 +14,7 @@ body {
     background-color: white;
     font-family: 'Monda', sans-serif;
     color: black;
-    font-size: 999;
+    font-size: 450px;
     }
 .home {
     position: absolute;
@@ -30,15 +30,14 @@ body {
     }
     
     @keyframes navigationbuttonanimation {
-      from {background-color: #deebff;}
-      to   {}
+      0%   {background-color: white; bottom-border: none; letter-spacing: default; cursor: default;}
+      50%  {background-color: #ebf3ff; bottom-border: none; letter-spacing: default; cursor: crosshair;}
+      100% {background-color: #deebff; bottom-border: 2px solid black; letter-spacing: 30px; cursor: pointer;}
     }
     
     .home:hover {
-    background: #deebff;
-    border-bottom: 5px solid black;
-    letter-spacing: 5px;
-    font-size: 50px;
+    animation-name: navigationbuttonanimation;
+    animation-duration: 30s;
     }
     </style>
   </head>
